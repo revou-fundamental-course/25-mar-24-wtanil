@@ -1,0 +1,38 @@
+@media screen and (max-width: 700px) {
+
+    .row,
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    /* background-color: rgb(86, 147, 122); */
+}
+
+body {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.header {
+    background: rgb(158, 193, 150);
+    padding: 30px;
+    text-align: center;
+    color: rgb(27, 27, 27);
+}
+
+.half {
+    flex: 50%;
+    /* background-color: #f1f1f1; */
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
