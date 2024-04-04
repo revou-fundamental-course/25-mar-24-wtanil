@@ -26,10 +26,14 @@ body {
     color: rgb(27, 27, 27);
 }
 
-.half {
-    flex: 50%;
+.main {
+    flex: 100%;
     /* background-color: #f1f1f1; */
     padding: 20px;
+}
+
+.result {
+    visibility: visible;
 }
 
 .row {
