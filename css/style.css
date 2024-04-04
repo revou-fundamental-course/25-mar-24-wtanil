@@ -10,10 +10,6 @@
     box-sizing: border-box;
   }
 
-html {
-    /* background-color: rgb(86, 147, 122); */
-}
-
 body {
     margin: 0 auto;
     max-width: 700px;
@@ -32,8 +28,8 @@ body {
     padding: 20px;
 }
 
-.result {
-    visibility: visible;
+#result {
+    visibility: hidden;
 }
 
 .row {

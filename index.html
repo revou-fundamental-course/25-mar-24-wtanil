@@ -22,27 +22,28 @@
     <div class="row">
         <div class="main">
             <p>Berat badan ideal adalah impian semua orang.</p>
-            <form>
+            <form id="form1" onsubmit="return false;">
                 <label for="jeniskelamin">Jenis kelamin:</label>
-                <input type="radio" id="pria" name="jeniskelamin" value="pria">
+                <input type="radio" id="pria" name="jeniskelamin" value="pria" checked="checked">
                 <label for="pria">Pria</label>
                 <input type="radio" id="wanita" name="jeniskelamin" value="wanita">
                 <label for="wanita">Wanita</label><br>
                 <label for="berat">Berat badan (kg):</label><br>
-                <input type="text" id="berat" name="berat"><br>
+                <input type="text" id="berat" name="berat" onkeypress="return isDecimal(event)" ><br>
                 <label for="usia">Usia (tahun):</label><br>
-                <input type="text" id="usia" name="usia"><br>
+                <input type="text" id="usia" name="usia" onkeypress="return isNumeric(event)" ><br>
                 <label for="tinggi">Tinggi badan (cm):</label><br>
-                <input type="text" id="tinggi" name="tinggi"><br><br>
+                <input type="text" id="tinggi" name="tinggi" onkeypress="return isNumeric(event)" ><br><br>
                 <input type="reset" value="Reset">
-                <input type="submit" value="Submit">
+                <button onclick="submit1()">Hitung BMI</button>
             </form>
+            
         </div>
 
         <div class="main">
-            <div class="result">
+            <p id="result">
                 Berat badan anda termasuk: hasil
-            </div>
+            </p>
         </div>
     </div>
 
